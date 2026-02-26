@@ -56,9 +56,182 @@ header p {
 /* Estilo das seções */
 section {
     padding: 40px 0;
+}<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arthur Dimitri | Portfólio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
 }
 
-section:nth-child(even) {
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #2563eb, #9333ea);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header p {
+    margin: 10px 0;
+}
+
+header button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #2563eb;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header button:hover {
+    background-color: #e2e8f0;
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background-color: #1e293b;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #2563eb;
+}
+
+.projeto-card {
+    background-color: #1e293b;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+    background-color: #334155;
+}
+
+.contato {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111827;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Arthur Dimitri</h1>
+    <p>Desenvolvimento de Sistemas | Banco de Dados</p>
+    <button onclick="scrollContato()">Entrar em Contato</button>
+</header>
+
+<section>
+    <h2>Sobre Mim</h2>
+    <p>
+        Estudante de Desenvolvimento de Sistemas com foco em Banco de Dados e Back-end.
+        Experiência com Python, SQL, HTML e lógica de programação.
+        Buscando oportunidade para aplicar meus conhecimentos técnicos.
+    </p>
+</section>
+
+<section>
+    <h2>Competências Técnicas</h2>
+    <div class="grid">
+        <div class="card">Python</div>
+        <div class="card">SQL</div>
+        <div class="card">Modelagem de Dados</div>
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">Git & GitHub</div>
+        <div class="card">Lógica de Programação</div>
+    </div>
+</section>
+
+<section>
+    <h2>Projetos</h2>
+
+    <div class="projeto-card">
+        <h3>Sistema de Cadastro</h3>
+        <p>Projeto em Python com armazenamento de dados.</p>
+    </div>
+
+    <div class="projeto-card">
+        <h3>Controle de Estoque</h3>
+        <p>Sistema simples para gerenciamento de produtos.</p>
+    </div>
+
+    <div class="projeto-card">
+        <h3>Site HTML/CSS</h3>
+        <p>Página web estática desenvolvida para prática.</p>
+    </div>
+</section>
+
+<section id="contato" class="contato">
+    <h2>Contato</h2>
+    <p>Email: arthurguedes4417@gmail.com</p>
+    <p>GitHub: github.com/Artoguedes</p>
+</section>
+
+<footer>
+    <p>© 2026 Arthur Dimitri</p>
+</footer>
+
+<script>
+function scrollContato() {
+    document.getElementById("contato").scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>
     background-color: #fff; /* Alternando fundo entre branco e azul */
 }
 
