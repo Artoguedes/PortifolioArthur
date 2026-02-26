@@ -1,64 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio </title>
-    <link rel="stylesheet" href="oi.css">
-<style>
-       /* Resetando estilos básicos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Definindo a fonte e o fundo */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9; /* Fundo neutro */
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Estilo do Header */
-header {
-    background-color: #4e4ec7; /* Azul */
-    color: white;
-    text-align: center;
-    padding: 40px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-header:hover {
-    background-color: #3a3a9b; /* Azul mais escuro ao passar o mouse */
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-}
-
-header p {
-    font-size: 1.2em;
-    font-weight: 300;
-}
-
-/* Containers para conteúdo */
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Estilo das seções */
-section {
-    padding: 40px 0;
-}<!DOCTYPE html>
-<html lang="pt-br">
-<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Arthur Dimitri | Portfólio</title>
@@ -198,20 +140,20 @@ footer {
 <section>
     <h2>Projetos</h2>
 
-    <div class="projeto-card">
-        <h3>Sistema de Cadastro</h3>
-        <p>Projeto em Python com armazenamento de dados.</p>
-    </div>
+     <div class="projeto-card"
+     onclick="window.open('https://github.com/Artoguedes/Projetos/blob/main/cadastro.py', '_blank')">
 
-    <div class="projeto-card">
+    <h3>Sistema de Cadastro</h3>
+    <p>Projeto em Python com armazenamento de dados.</p>
+
+</div>
+
+    <div class="projeto-card"
+        onclick="window.open('https://github.com/Artoguedes/Projetos/blob/main/estoque.py', '_blank')">
         <h3>Controle de Estoque</h3>
         <p>Sistema simples para gerenciamento de produtos.</p>
     </div>
 
-    <div class="projeto-card">
-        <h3>Site HTML/CSS</h3>
-        <p>Página web estática desenvolvida para prática.</p>
-    </div>
 </section>
 
 <section id="contato" class="contato">
@@ -230,182 +172,5 @@ function scrollContato() {
 }
 </script>
 
-</body>
-</html>
-    background-color: #fff; /* Alternando fundo entre branco e azul */
-}
-
-section:nth-child(odd) {
-    background-color: #e1e4f7;
-}
-
-h2 {
-    font-size: 2.5em;
-    color: #4e4ec7;
-    margin-bottom: 20px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    line-height: 1.5;
-    text-align: center;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
-    text-align: center;
-}
-
-ul li {
-    margin: 10px 0;
-    font-size: 1.2em;
-    font-weight: 500;
-}
-
-/* Estilo dos projetos */
-.projeto {
-    margin-bottom: 30px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.projeto:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.projeto h3 {
-    font-size: 1.8em;
-    color: #4e4ec7;
-    margin-bottom: 15px;
-}
-
-/* Estilo do footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 1em;
-    letter-spacing: 1px;
-    transition: background-color 0.3s ease;
-}
-
-footer:hover {
-    background-color: #4e4ec7;
-}
-
-/* Animação no carregamento do site */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-body {
-    animation: fadeIn 1s ease-out;
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    header p {
-        font-size: 1em;
-    }
-
-    h2 {
-        font-size: 2em;
-    }
-
-    .projeto {
-        padding: 15px;
-    }
-
-    footer p {
-        font-size: 0.9em;
-    }
-}
-</style>
-
-</head>
-<body>
-
-    <header>
-        <div class="container">
-            <h1>Bem-vindo ao meu Portfólio</h1>
-            <p>Eu sou Arthur, um desenvolvedor de sistemas.</p>
-        </div>
-    </header>
-
-    <section id="sobre">
-        <div class="container">
-            <h2>Sobre Mim</h2>
-            <p>Olá, sou Arthur Guedes. Sou um desenvolvedor de sistemas com experiência em HTML, CSS, JAVA.</p>
-            <p>Programador apaixonado, adoro trabalhar com Desenvolvimento e sempre busco novas oportunidades para aprender e crescer.</p>
-        </div>
-    </section>
-
-    <section id="habilidades">
-        <div class="container">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Proatividade;</li>
-                <li>Boa comunicação;</li>
-                <li>Inglês intermadiário;</li>
-                <li>Criativo.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="projetos">
-        <div class="container">
-            <h2>Projetos</h2>
-            <div class="projeto">
-                <h3>Vivarte</h3>
-                <p>Um site sobre artes brasileiras. </p>
-            </div>
-            <div class="projeto">
-                <h3>Daltonismo</h3>
-                <p>Uma aplicação sobre acessibilidade para os daltonicos. </p>
-            </div>
-            <!-- Adicione mais projetos conforme necessário -->
-        </div>
-    </section>
-
-    <section id="contato">
-        <div class="container">
-            <h2>Contato</h2>
-            <p>Email: arthurguedes4417@gmail.com</p>
-            <p>Telefone: (55) 38 9 88352386</p>
-            <p>GitHub: Artoguedes</p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Arthur. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
